@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@700&family=Montserrat:wght@500;600&family=Oleo+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+.main-item{
+    padding:40px 20px;
+}
+/* ********************************************************** */
+/* Main section */
+
+.order-container{
+    padding:5% 6%;
+}
+.order-container-heading{
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top:3%;
+    padding-bottom:2%;
+}
+.order-container-text{
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+}
+.bold-word{
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 600;
+}
+.order-container-sub-child{
+    display: flex;
+    gap:15px;
+    padding:10px 0;
+    align-items: center;
+}
+.order-container-parent{
+    display: flex;
+    padding-top:3%;
+    padding-left:5%;
+}
+.border-line{
+    border-bottom: 2px solid #000;
+}
+.order-container-first-child{
+    border-right:1px solid black;
+    padding-right:5%;
+    padding-top:2%;
+}
+.order-container-child{
+    padding-left:5%;
+    padding-top:2%;
+}
+.order-container-sub-child p{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+}
+.order-container-top-child {
+    width:20%;
+}
+.order-container-top-child img{
+    width:80%;
+}
+.order-sub-parent{
+    display: flex;
+    width:80%;
+}
+/* Responsive-Main section  */
+@media only screen and (min-width:1800px){
+    .container{
+        width:1200px;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:1000px){
+    .order-container-parent {
+        padding-left: 0%;
+    }
+    .order-container-sub-child p {
+        font-size: 15px;
+    }
+    .order-container-first-child {
+        padding-right: 3%;
+    }
+    .order-container-child {
+        padding-left: 3%;
+    }
+}
+@media only screen and (max-width:760px){
+    .order-container-parent{
+        display: flex;
+        flex-direction: column;
+        padding-top:3%;
+        padding-left:5%;
+    }
+    .order-container-top-child {
+        width:50%;
+        margin: auto;
+        padding-bottom:20px;
+    }
+    .order-container-top-child img{
+        width:80%;
+    }
+    .order-sub-parent{
+        display: flex;
+        width:100%;
+    }
+}
+@media only screen and (max-width:550px){
+    .order-container {
+         padding: 5% 0%;
+    }
+    .order-container-sub-child p {
+        color: #000;
+        font-family: Inter;
+        font-size: 12px;
+    }
+    .order-container-sub-child{
+        gap:13px;
+    }
+    .order-container-heading {
+        font-size: 30px;
+        padding-left:20px;
+    }
+    .order-container-text {
+        font-size: 22px;
+        padding-left:20px;
+    }
+    .bold-word {
+        font-size: 22px;
+    }
+}
+@media only screen and (max-width:480px){
+    .order-container-heading {
+        font-size: 25px;
+        padding-left:0px;
+        text-align: center;
+    }
+    .order-container-text {
+        font-size: 15px;
+        padding-left:0px;
+        text-align: center;
+    }
+    .bold-word {
+        font-size: 15px;
+    }
+    .order-container-top-child {
+        width:40%;
+        margin: auto;
+    }
+    .order-container{
+        padding:8% 6%;
+    }
+}
+/* ********************************************************************* */
+/* Card-section */
+.card-title{
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    padding-left:9%;
+}
+.card-wrapper{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-box{
+    width:25%;
+    background: #FEFEFE;
+    box-shadow: 11px 13px 23px 0px rgba(0, 0, 0, 0.25), -10px -10px 23px 0px rgba(0, 0, 0, 0.25);
+    padding:2% 0%;  
+}
+.radio-button-box{
+    display: flex;
+    align-items: center;
+    gap:40px;
+    padding:0 10%;
+}
+.radio-button-box p{
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 600;
+}
+.price{
+    color: #000;
+    font-family: Inter;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    padding-top:15%;
+}
+.price-text-tag{
+    text-align: center;
+    color: #707070;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    padding-top:10px;
+}
+.card-para{
+    color: #707070;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    padding:20px 12%;
+}
+.radio-button-box img{
+    width:30px;
+}
+.hidden{
+    display:none;
+}
+.button-box{
+   display: flex;
+   align-items: center;
+   gap:5px;
+   cursor: pointer;
+   
+}
+/* Responsive-Card-section */
+@media only screen and (max-width:1000px){
+    .card-box{
+        width:35%;
+        padding:2% 0%;  
+    }
+}
+@media only screen and (max-width:700px){
+    .card-box{
+        width:40%;
+    }
+    .radio-button-box p{
+        font-size: 22px;
+    }
+    .price{
+        font-size: 25px;
+    }
+    .price-text-tag{
+        font-size: 12px;
+        padding-top:10px;
+    }
+    .card-para{
+        font-size: 12px;
+        padding:20px 12%;
+    }
+    .radio-button-box{
+        display: flex;
+        align-items: center;
+        gap:20px;
+        padding:0 10%;
+    }
+}
+@media only screen and (max-width:480px){
+    .card-box{
+        width:70%;
+        margin: auto;
+        padding:5% 0%;  
+    }
+    .card-wrapper{
+        padding-top: 13%;
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    .radio-button-box{
+        display: flex;
+        gap:40px;
+    }
+    .card-para{
+        font-size: 12px;
+        padding:20px 5%;
+    }
+    .card-title{
+        font-size: 25px;
+        padding-left:0%;
+        text-align: center;
+    }
+    .radio-button-box p{
+        font-size: 19px;
+    }
+    .price{
+        font-size: 21px;
+    }
+    .radio-button-box img{
+        width:20px;
+    }
+}
+/* ********************************************************************** */
+/* Payment-section */
+.payment-section{
+    padding-top:5%;
+}
+.payment-section-title{
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+    padding-left:10%;
+    padding-bottom:5%;
+}
+.payment-section-left-child{
+    width:50%;
+    border: 2px solid #7A7A7A;
+    background: #FAFAFA;
+    padding:3% 1%;
+}
+.top-child{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #8C8C8C;
+    padding-bottom:4%;
+    padding:3% 6%;
+}
+.top-left-sub-child{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    padding:8px 0;
+}
+.child-heading{
+    color: #282828;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom:5%;
+}
+.top-left-sub-child{
+    color: #282828;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 400;
+}
+.top-right-child p{
+    padding:10px 0;
+    color: #282828;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: right;
+}
+form{
+    padding-top:5%;
+    text-align: center;
+    border-bottom: 1.5px solid #8C8C8C;
+    padding-bottom:5%;
+}
+
+/* ************************** */
+.form-data{
+    width:100%;
+}
+.data{
+    width:100%;
+}
+.form-box{
+    width:100%;
+}
+/* ***************************** */
+.form-data input{
+    width:40%;
+    padding:8px 10px;
+    margin: 15px 15px;
+    gap:20px;
+}
+.form-box input{
+    width:40%;
+    padding:10px 10px;
+    margin-right:47%;
+    margin-top:15px;
+}
+.data input{ 
+    width:86%;
+    padding:10px 10px;
+    margin:15px 0;
+}
+.data select{ 
+    width:86%;
+    padding:10px 10px;
+    margin:15px 0;
+    outline: none;
+}
+.form-data select{
+    width:40%;
+    padding:8px 10px;
+    margin: 15px 15px;
+    gap:20px;
+    outline: none;
+}
+input{
+    outline: none;
+}
+
+.third-child{
+    padding-top:5%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.5px solid #8C8C8C;
+    padding-bottom:5%;
+    padding:3% 6%;
+}
+.third-child-heading{
+    color: #282828;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom:10px;
+}
+.third-child-colorfull-heading{
+    color: #039F7D;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    padding-bottom:10px;
+}
+.third-child-left-child p,
+.third-child-right-child p{
+    color: #282828;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom:3px;
+}
+.third-child-bottom-heading{
+    color: #282828;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 30px;;
+}
+.fourth-child{
+    padding:3% 6%;
+    color: #282828;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.submit-btn{
+    text-align: center;
+}
+.submit-btn button{
+    border-radius: 5px;
+    background: #04A07E;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    padding:8px 40px;
+}
+.payment-section-right-child{
+    width:50%;
+}
+.payment-card-wrapper{
+    border: 3px solid #04A07E;
+    background: #FAFAFA;
+    width:83%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:11px 2%;
+    margin-bottom: 25px;
+}
+.payment-cards-wrapper{
+    border: 2px solid #7A7A7A;
+    background: #FAFAFA;
+    width:83%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px 2%;
+    margin-bottom: 25px;
+}
+.images-box img{
+    width:75%;
+}
+.image-box img{
+    width:75%;
+}
+.payment-section-parent{
+    display: flex;
+    justify-content: space-between;
+    gap:5%;
+    padding-left:7%;
+}
+.payment-card-heading{
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Responsive-Payment-section */
+@media only screen and (max-width:1200px){
+    .payment-card-wrapper {
+        width: 90%;
+    }
+    .payment-cards-wrapper {
+        width: 90%;
+    }
+    .payment-section-parent {
+        padding-left: 5%;
+    }
+    
+}
+@media only screen and (max-width:1050px){
+    .payment-card-heading {
+        font-size: 17px;
+    }
+    .child-heading {
+        font-size: 18px;
+    }
+    .data input {
+        width: 89%;
+    }
+    .data select {
+        width: 89%;
+    }
+}
+@media only screen and (max-width:900px){
+    .payment-section-parent{
+        display: flex;
+        flex-direction: column;
+        gap:0%;
+        padding-left:0%;
+    }
+    .payment-section-left-child{
+        width:70%;
+        padding:3% 0%;
+        margin: auto;
+        margin-bottom:8%;
+    }
+    .payment-section-right-child{
+        width:65%;
+        margin: auto;
+    }
+    .payment-card-wrapper {
+        width: 100%;
+        padding: 11px 2%;
+        margin-bottom: 25px;  
+    }
+    .payment-cards-wrapper{
+        width:100%;
+    }
+    .data input {
+        width: 87%;
+    }
+    .data select {
+        width: 87%;
+    }
+}
+@media only screen and (max-width:600px){
+    .payment-section-left-child{
+        width:85%;
+        padding:3% 0%;
+        margin: auto;
+        margin-bottom:8%;
+    }
+    .payment-section-right-child{
+        width:80%;
+        margin: auto;
+    }
+    .data input {
+        width: 88%;
+    }
+    .data select {
+        width: 88%;
+    }
+}
+@media only screen and (max-width:480px){
+    .payment-section-left-child{
+        width:100%;
+        padding:3% 0%;
+        margin: auto;
+        margin-bottom: 10%;
+    }
+    .payment-section-right-child{
+        width:100%;
+        margin: auto;
+    }
+    .top-child {
+        padding: 3% 1%;
+    }
+    .child-heading {
+        font-size: 14px;
+    }
+    .top-left-sub-child {
+        font-size: 13px;
+    }
+    .top-right-child p {
+        padding: 9px 0;
+        font-size: 13px;
+    }
+    .form-data input {
+        width: 87%;
+        margin: 15px 0px;
+    }
+    .form-box input {
+        width: 88%;
+        margin-right: 0%;
+    }
+    .form-data select {
+        width: 88%;
+    }
+    .third-child-heading, .third-child-colorfull-heading {
+       font-size: 18px;
+    }
+    .third-child-left-child p, .third-child-right-child p{
+        font-size: 15px;
+    }
+    .fourth-child {
+        padding: 3% 3%;
+        font-size: 13px;
+    }
+    .payment-section-title{
+        font-size: 25px;
+        text-align: center;
+        padding-left: 0px;
+        padding-bottom:10%;
+    }
+    
+}
+
+

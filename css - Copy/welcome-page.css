@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@700&family=Montserrat:wght@500;600&family=Oleo+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+.main-item{
+    padding:40px 20px;
+}
+
+/* main-section */
+.welcom-section-parent{
+    display: flex;
+    justify-content: space-between;
+    padding:5% 20px;
+}
+.parent-left-child{
+    width:50%;
+}
+.parent-right-child{
+    width:42%;
+    height: max-content;
+    position: relative;
+}
+.parent-right-child img{
+    width:100%;    
+}
+.parent-right-child p{
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 80%;
+    text-align: center; 
+    color: #000;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;   
+}
+.main-title{
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 600;
+    padding-top:2%;
+}
+.main-para{
+    color: #9A9A9A;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    width:70%;
+    margin: auto;
+    padding-top:5px;
+    padding-bottom:5%;
+}
+.form-data{
+    margin: auto;
+    width:60%;
+}
+input{
+    width:100%;
+    padding:10px 15px;
+    margin-bottom:20px;
+    margin-top:5px;
+    outline: none;
+    border-radius: 8px;
+    border: 2.5px solid #7A7A7A;
+    background: #FFF;
+}
+label{
+    color: #232323;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+}
+.submit-button {
+     margin: auto;
+     text-align: center;
+     margin:2% 0;
+}
+.submit-button button{
+    width: 60%;
+    padding:5px 0;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: #04A07E;
+    border: none;
+}
+.text-box{
+    display: flex;
+    align-items: center;
+    padding-top:1%;
+    padding-bottom:2%;
+    width:100%;
+}
+.text-box-left-side-span{
+    width:15%;
+    border-top: 1px solid #6B6B6B;
+    margin-left:20%;
+}
+.text-box-right-side-span{
+    width:15%;
+    border-top: 1px solid #6B6B6B;  
+}
+.text-box-para{
+    width:30%;
+    text-align: center;
+    color: #A6A6A6;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;  
+}
+.icon-box{
+    width:60%;
+    margin: auto;
+    text-align: center;
+}
+.icon-box img{
+    width:20%;
+}
+.login-btn{
+    width:100%;
+    text-align: center;
+}
+.login-btn a{
+    text-decoration: none;
+    color: #939393;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom:1px solid #939393;   
+}
+/* Responsive-main-section */
+@media only screen and (min-width:1920px){
+    .container{
+        width:1200px;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:1100px){
+    .text-box-para{
+        text-align: center;
+        width: 30%; 
+    }
+    .text-box-left-side-span{
+        padding-left:15%;
+    }
+    .text-box-right-side-span{
+        padding-right:15%;
+    }
+    .parent-right-child{
+        width:50%;
+        height: max-content;
+        position: relative;
+    }
+    .parent-right-child p{
+        font-size: 24px;
+    }   
+}
+@media only screen and (max-width:900px){
+    .welcom-section-parent{
+        display: flex;
+        flex-direction: column;
+        gap:60px;
+    }
+    .parent-left-child{
+        width:80%;
+        margin: auto;
+    }
+    .main-para{
+        width:100%;
+    }
+    .parent-right-child{
+        width:70%;
+        height: max-content;
+        position: relative;
+        margin: auto;
+    }
+    .parent-right-child p {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:600px){
+    .parent-left-child{
+        width:100%;
+        margin: auto;
+    }
+    .parent-right-child{
+        width:90%;
+        height: max-content;
+        position: relative;
+        margin: auto;
+    }
+    .parent-right-child p {
+        font-size: 20px;
+    }
+    .main-para{
+        width:100%;
+    }
+}
+@media only screen and (max-width:480px){
+    .main-title {
+        font-size: 40px;
+    }
+    .main-para{
+        width:100%;
+    }
+    .parent-right-child p {
+        font-size: 14px;
+    }
+
+    .text-box-left-side-span{
+        width:3%;
+        border-top: 1px solid #6B6B6B;
+        margin-left:20%;
+    }
+    .text-box-right-side-span{
+        width:3%;
+        border-top: 1px solid #6B6B6B;  
+    }
+    .text-box-para{
+        width:30%;
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+
+
+
+
+
+

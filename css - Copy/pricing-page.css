@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@700&family=Montserrat:wght@500;600&family=Oleo+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+.main-item{
+    padding:40px 20px;
+}
+/* Static-image-section */
+.static-image-section{
+    display: flex;
+    justify-content: space-between;
+    padding-top:5%;
+}
+.left-image-section-parent{
+    width:50%;
+    padding-left:30px;
+    padding-top:30px;
+}
+.right-image-section-parent{
+    width:50%;
+    padding-top:30px;
+}
+.right-image-section-parent img{
+    width:100%;
+}
+.left-image-section-child-heading{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 39px;
+    font-weight: 600;
+}
+.colorfull-word{
+    color: #04A07E;
+}
+.left-image-section-child-imp-text{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    padding:10px 0;
+}
+.left-image-section-child-text{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding:5px 0;
+    padding-left:10px;
+  
+}
+.child-text{
+    color: #797979;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+}
+.price-per-month{
+    color: #039F7D;
+    font-family: Montserrat;
+    font-size: 35px;
+    font-weight: 600;
+    padding:10px 0;
+}
+.subscript-text{
+    color: #797979;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+}
+.random-text{
+    color: #797979;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+}
+.btn-see-more{
+    border-radius: 13px;
+    background: #000;
+    color: #04A07E;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 700;
+    padding:10px 50px;
+    border: none;
+    margin-top:30px;
+
+}
+/* Responsive-Static-image-section */
+@media only screen and (min-width:1920px){
+    .container{
+        width:1200px;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:1200px){
+    .left-image-section-child-heading{
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width:900px){
+    .static-image-section{
+       display: flex;
+       flex-direction: column;
+    }
+    .left-image-section-parent{
+        width:100%;
+        text-align: center;
+        padding-left:0px;
+        padding-top:30px;
+    }
+    .right-image-section-parent{
+        width:70%;
+        margin: auto;
+        padding-top:50px;
+    }
+    .left-image-section-child-text{
+        padding-left:42%;
+    }
+    .price-per-month{
+        font-size: 28px; 
+        padding-top:30px;  
+    }
+    .left-image-section-child-imp-text{
+       padding-bottom:30px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .left-image-section-child-text{
+        padding-left:35%;
+    }
+    .left-image-section-child-heading{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .left-image-section-child-text{
+        padding-left:30%;
+    }
+    .left-image-section-child-heading{
+        font-size: 20px;
+    }
+    .right-image-section-parent{
+        width:100%;
+        margin: auto;
+    }
+}
+/* *************************************************************** */
+/* helping-team-info-section */
+.team-info-section{
+    display: flex;
+    justify-content: space-between;  
+}
+.left-child-of-team-info-section{
+    width:60%;
+    padding-left:10%;
+}
+.left-child-of-team-info-section img{
+    width:75%;
+}
+.right-child-of-team-info-section{
+    width:40%;
+    padding-top:5%;
+}
+.sub-child-of-right-child{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.right-child-team-info-heading{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 7%;
+}
+.sub-child-of-right-child p{
+    color: #797979;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    padding:10px 0;
+}
+/* Responsive-helping-team-info-section */
+@media only screen and (max-width:1200px){
+    .left-child-of-team-info-section{
+        width:55%;
+        padding-left:5%;
+    }
+    .left-child-of-team-info-section img{
+        width:80%;
+    }
+    .right-child-of-team-info-section{
+        width:45%;
+    }
+    .sub-child-of-right-child p{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width:900px){
+    .team-info-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-child-of-team-info-section{
+        width:100%;
+        padding-left:0%;
+        text-align: center;
+    }
+    .left-child-of-team-info-section img{
+        width:80%;    
+    }
+    .right-child-of-team-info-section{
+        width:85%;
+        padding-top:3%;
+        margin: auto;
+        text-align: center;
+    }
+    .sub-child-of-right-child{
+        text-align: center;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:480px){
+    .right-child-of-team-info-section{
+        width:100%;
+        padding-top:3%;
+        text-align: center;
+    }
+    .right-child-team-info-heading{
+        font-size: 25px;
+        padding-bottom: 7%;
+    }
+    .sub-child-of-right-child p{
+        font-size: 13px;
+    }
+    .left-child-of-team-info-section img{
+        width:100%;    
+    }
+}
+/* ********************************************************************** */
+/* Plan-containers */
+.basic-standard-premium-plan-container{
+    display: flex;
+    justify-content: space-between;
+    padding:4% 4%;
+
+}
+.basic-plan-container,
+.premium-plan-container,
+.standard-plan-container{
+    width:30%;
+    padding: 2% 2%;  
+    border: 3px solid #000;
+    background: rgba(217, 217, 217, 0.00);
+}
+.plan-heading{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 32px;
+}
+.plan-para{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
+    font-weight: 500;
+    padding-top:10px;
+    padding-bottom:20px;
+}
+.plan-price{
+    color: #04A07E;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+.plan-price-sub-para{
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+}
+.plan-btn{
+   text-align: center;
+}
+.add-to-cart-btn{
+    background-color: #04A07E;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    border:none;
+    padding:8px 60px;
+    margin-top:35px;
+    margin-bottom:30px;
+}
+.plan-content{
+    border-bottom: 2px solid #72ADA0;
+}
+.plan-pages-text-lines{
+    display: flex;
+    gap:15px;
+    padding-left:20px;
+    padding-bottom: 18px;
+}
+.page-line-parent{
+    padding-top:30px;
+}
+.text{
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+}
+.innertext-image{
+    padding-left:10px;
+}
+
+/* Responsive Plan-containers*/
+@media only screen and (max-width:1080px){
+    .plan-para{
+       font-size: 13px;
+    }
+    .add-to-cart-btn{
+        font-size: 20px;
+        padding:5px 40px;
+        margin-top:25px;
+        margin-bottom:30px;
+    }
+    .text{
+        font-size: 15px;
+        padding-left:0px;
+    }
+    .basic-plan-container,
+    .standard-plan-container,
+    .premium-plan-container{
+        width:30%;
+        padding: 2% 2%;   
+    }
+}
+
+@media only screen and (max-width:850px){
+    .basic-standard-premium-plan-container{
+        padding:8% 0%;
+    }
+}
+@media only screen and (max-width:750px){
+    .basic-standard-premium-plan-container{
+        display: flex;
+        flex-direction: column;
+        padding:10% 4%;
+        gap:40px;
+    }
+    .basic-plan-container,
+    .standard-plan-container,
+    .premium-plan-container{
+        width:70%;
+        padding: 2% 4%;   
+        margin: auto;
+    }
+    .add-to-cart-btn{
+        font-size: 25px;
+        padding:5px 60px;
+     }
+    .plan-para{
+        font-size: 18px;
+     }
+     .text{
+        font-size: 18px;
+    }
+    .plan-heading{
+        font-size: 35px;
+    }
+}
+@media only screen and (max-width:480px) {
+    .basic-plan-container,
+    .standard-plan-container,
+    .premium-plan-container{
+        width:100%;
+        padding: 2% 0%;   
+        margin: auto;
+    }
+    .basic-standard-premium-plan-container{
+        padding:10% 5%;
+    }
+}

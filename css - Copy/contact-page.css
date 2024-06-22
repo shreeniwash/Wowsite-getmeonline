@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Montserrat:wght@500;600&family=Oleo+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+.main-item{
+    padding:40px 20px;
+}
+
+/* *************************************************************************** */
+/* Contact-us-section */
+
+.contact-section{
+    padding:0% 0%;
+    padding-top:8%;
+}
+.top-parent{
+    display: flex;
+    padding:0% 5%;
+}
+.section-heading{
+   padding-left: 20px;
+   color: #000;
+   font-family: Lato;
+   font-size: 20px;
+   font-weight: 700;
+}
+.section-span{
+    padding-left:20%;
+    border-top: 5px solid #D9D9D9;  
+    margin-top:10px;
+}
+.middle-section{
+    display: flex;
+    justify-content: space-between;
+    padding:0% 5%;
+    padding-bottom:4%;
+
+}
+.left-child-of-middle-section{
+    width:58%;
+}
+.left-child-of-middle-section-heading{
+    color: #000;
+    font-family: Lato;
+    font-size: 56px;
+    font-weight: 700;
+    padding-top:45px;
+}
+.colorfull-word{
+    color: #04A07E;
+}
+.right-child-of-middle-section{
+    width:40%;
+}
+.right-child-of-middle-section img{
+    width:100%;
+}
+.form-top-side-image{
+    position: absolute;
+    margin-top:-17px;
+    padding-left:20px;
+    width:200px;
+}
+form{
+    margin:0% 5%;
+    position: relative;
+}
+.form-bottom-side-image img{
+    width:100px; 
+}
+.form-bottom-side-image{
+    text-align: right;
+    margin-top:-40px;
+    padding-right:15px;
+   
+}
+.contact-form{
+    background: #FFF;
+    box-shadow: 6px 6px 15px 0px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    padding:2% 0;
+}
+.first-heading{
+    color: #7C7C7C;
+    font-family: Lato;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom:30px;
+}
+input{
+   width:35%;
+   padding:15px 20px;
+   border-radius: 7px;
+   background: #F0F0F0;
+   border: none;
+   outline: none;
+}
+input#lname,
+input#phoneno{
+    margin-left:30px;
+    margin-bottom:30px;
+}
+.form-btn button{
+    border-radius: 15px;
+    background: #04A07E;
+    text-align: center;
+    padding:8px 13%;
+    border: none;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+}
+.form-btn{
+    width:100%;
+    margin:20px 0;
+    text-align: center;
+}
+textarea{
+    /* border-radius: 12px; */
+    background: #F0F0F0;
+    border: none;
+    padding:10px 20px;
+    width:73.5%;
+    outline: none;
+}
+
+
+/* Responsive-Contact-us-section */
+@media only screen and (min-width:1920px){
+    .container{
+        width:1200px;
+        margin: auto;
+    }
+}
+@media only screen and (min-width:1440px){
+    textarea{
+        width: 73%;
+    }
+}
+@media only screen and (max-width:1200px){
+     .left-child-of-middle-section-heading{
+        font-size: 45px;
+    }
+    .middle-section{
+       padding-bottom:4%;
+    }
+    
+}
+@media only screen and (max-width:900px){
+    .middle-section{
+        display: flex;
+        flex-direction: column;
+        padding:0% 2%;
+        text-align: center;
+        gap:40px;
+        padding-bottom:5%;
+    }
+    .left-child-of-middle-section{
+        width:100%;
+    }
+    .right-child-of-middle-section{
+        width:70%;
+        margin: auto;
+    }
+    .right-child-of-middle-section img{
+        width:100%;
+    } 
+    textarea{
+        padding:10px 20px;
+        width:75%;
+    }
+}
+@media only screen and (max-width:764px){
+    input{
+        width:80%;
+        padding:10px 20px;
+     }
+     textarea{
+        width:80%;
+    }
+     input#lname,
+     input#phoneno,
+     input#email,
+     input#fname{
+         margin-left:0px;
+         margin-bottom:30px;
+     }
+     .form-top-side-image{
+        position: absolute;
+        margin-top:-17px;
+        padding-left:20px;
+        width:150px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .left-child-of-middle-section-heading{
+        font-size: 30px;
+    }
+    .form-top-side-image{
+        position: absolute;
+        margin-top:-17px;
+        padding-left:0px;
+        width:130px;
+    }
+    .form-bottom-side-image{
+        text-align: right;
+        margin-top:-40px;
+        padding-right:0px;
+    }
+    .form-bottom-side-image img{
+        width:80px;
+    }
+    .first-heading{
+        font-size: 35px;
+        padding-bottom:30px;
+        padding-top:20px;
+    }
+    .right-child-of-middle-section{
+        width:100%;
+        margin: auto;
+    }
+    .right-child-of-middle-section img{
+        width:100%;
+    } 
+    .middle-section{
+        padding-bottom:30px;
+    }
+
+}
+
+/* ************************************************************************** */
+/* Info-section */
+
+.info-about-organization{
+    padding-bottom:4%;
+}
+.heading-fill-the-form{
+    text-align: center;
+    color: #000;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom:5%;
+}
+.address-details{
+    display: flex;
+    gap:20px;
+    align-items: center;
+    padding:15px 0;
+    padding-left:5%;  
+}
+.address-details-child{
+    display: flex;
+    gap:20px;
+    padding-left:5%;  
+}
+.fa-xl{
+    color: #04A07E;
+}
+.address-details p{
+    color: #000;
+    font-family: Lato;
+    font-size: 25px;
+    font-weight: 400;
+}
+.contact-details{
+    font-size: 28px;
+    font-weight: 600;
+}
+.address-parent{
+    width:60%;
+    padding-top:20px;
+}
+.address-parent h6{
+    color: #04A07E;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+}
+.address-parent p{
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top:2%;
+}
+.fa-location-dot{
+    padding-top:35px;
+}
+
+
+/* Responsive-Info-section */
+@media (min-width: 1920px) and (max-width: 2560px)  {
+    .form-top-side-image{
+        position: absolute;
+        margin-top:-30px;
+        padding-left:70px;
+    }
+    .form-bottom-side-image{
+        text-align: right;
+        margin-top:-50px;
+        padding-right:60px;
+    }
+        
+}
+@media only screen and (max-width:1200px){
+    .address-parent{
+        width:75%;
+    }
+}
+@media only screen and (max-width:800px){
+    .address-parent{
+        width:100%;
+    }
+    .info-about-organization{
+        padding-top:4%;
+    }
+}
+@media only screen and (max-width:480px){
+    .address-parent p{
+        font-size: 18px;
+        padding-top:5%;
+    }
+    .address-details p{
+        font-size: 20px;
+    }
+    .contact-details{
+        font-size: 17px;
+    }
+    .address-parent h6{
+        font-size: 20px;
+    }
+    .info-about-organization{
+        padding-top:7%;
+    }
+    .heading-fill-the-form{
+        font-size:25px;
+        padding-left:10px;
+        padding-right: 10px;
+    }
+}

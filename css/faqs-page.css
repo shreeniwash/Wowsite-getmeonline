@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@700&family=Montserrat:wght@500;600&family=Oleo+Script&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+button{
+    cursor: pointer;
+}
+.main-item{
+    padding:40px 20px;
+}
+
+/* *********************************************************************************** */
+/* Main section */
+
+.faq-image-section{
+    display:flex;
+    justify-content: space-between;
+    padding:5% 3%;
+}
+.left-child-of-faq-section{
+    width:50%;
+    padding-top:8%;
+}
+.right-child-of-faq-section{
+    width:50%;
+}
+.right-child-of-faq-section img{
+    width:100%;
+}
+.faq-top-heading{
+    color: #04A07E;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom:7%;
+}
+.faq-middle-heading{
+    color: #000;
+    font-family: Inter;
+    font-size: 65px;
+    font-weight: 600;
+    padding-bottom:5%;
+}
+.faq-para{
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+}
+.bold-word{
+    font-weight: 600;
+}
+
+/* Responsive-Main section */
+@media only screen and (min-width:1920px){
+    .container{
+        width:1200px;
+        margin: auto;
+    }
+}
+
+
+@media only screen and (max-width:1030px){
+    .left-child-of-faq-section{
+        width:60%;
+    }
+    .right-child-of-faq-section{
+        width:40%;
+    }
+}
+@media only screen and (max-width:900px){
+    .faq-image-section{
+        display:flex;
+        flex-direction: column;
+        padding:5% 3%;
+        gap:20px;
+    }
+    .left-child-of-faq-section{
+        width:100%;
+        padding-top:8%;
+        text-align: center;
+    }
+    .right-child-of-faq-section{
+        width:80%;
+        margin: auto;
+    }
+    .faq-top-heading {
+        padding-bottom:5%
+    }
+    .faq-middle-heading{
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width:480px){
+    .right-child-of-faq-section{
+        width:100%;
+        margin: auto;
+    }
+    .faq-middle-heading{
+        font-size: 40px;
+        padding-bottom:5%;
+    }
+    .faq-para{
+        font-size: 18px;
+    }
+}
+/* ************************************************************************* */
+/* Faq's section */
+.faqs-container{
+    padding:40px 3%;
+    padding-left:4%;
+}
+.accordian{
+    width:100%;
+    padding-left:32%;
+    padding-top:4%;
+}
+.top-support-heading{
+    color: #04A07E;
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 600;
+}
+.faq-heading{
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+}
+.faqs-para{
+    width:50%;
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top:5px;
+}
+.ques-box{
+    display: flex;
+    justify-content: space-between;
+}
+.question{
+    color: #000;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 600;
+}
+.faqs-box{
+    border-bottom: 1px solid #7A7A7A;
+    padding:15px 20px;
+}
+.accord-signs-box{
+    display: flex;
+    cursor: pointer;
+    gap:5px;
+}
+.accord-signs-box img{
+    width:25px;
+    height: 25px;
+}
+.hidden {
+    display: none;
+}
+.answer{
+    color: #707070;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+}
+.faqs-first-child img{
+    width:25px;
+    height: 25px;
+}
+
+/* Responsive-faqs-section */
+@media only screen and (max-width:1000px){
+    .faqs-para{
+        width:80%;
+    }
+    .accordian{
+        padding-left:20%;
+    }
+}
+@media only screen and (max-width:760px){
+    .accordian{
+        padding-left:0%;
+    }
+    .faqs-para{
+        width:100%;
+        font-size: 19px;
+    }
+    .question{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .answer{
+        font-size: 15px;
+    }
+    .faqs-first-child img{
+        width:20px;
+        height: 20px;
+    }
+    .accord-signs-box img{
+        width:20px;
+        height: 20px;
+    }
+}
+@media only screen and (max-width:480px){
+    .question{
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .answer{
+        font-size: 13px;
+    }
+    .top-support-heading{
+        font-size: 20px;
+    }
+    .faq-heading{
+        font-size: 30px;
+    }
+    .faqs-para{
+        font-size: 13px;
+    }
+    .faqs-box{
+        border-bottom: 1px solid #7A7A7A;
+        padding:15px 0px;
+    }
+    .accord-signs-box img{
+        width:17px;
+        height: 17px;
+    }
+}
+/* ********************************************************************* */
+/* Subscriber-section */
+.subscriber-section{
+    border-radius: 20px;
+    background: #F0F0F0;
+    padding:7% 4%;
+    margin:6% 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-child-healding{
+    color: #000;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 600;
+}
+.top-child-para{
+    color: #000;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top:10px;
+}
+input{
+    outline: none;
+    border: none;
+    padding:20px 20px;
+    padding-right:300px;
+    border-radius: 12px;
+    background: #FFF;
+}
+.last-child button{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 12px;
+    background: #04A07E;
+    border: none;
+    padding:17px 20px;
+}
+.middle-child-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+    width:60%;
+}
+/* Responsive Subscriber-section */
+@media only screen and (max-width:1200px){
+    input{
+        padding-right:200px;
+    }
+}
+@media only screen and (max-width:1050px){
+    input{
+        padding-right:150px;
+    }
+    .last-child button{
+        font-size: 20px;
+        border-radius: 12px;
+        padding:12px 15px;
+    }
+    .top-child-healding{
+        font-size: 30px;
+    }
+    .top-child-para{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:900px){
+     .middle-child-parent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+    .subscriber-section{
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+    }
+    .first-top-child{
+        width:100%;
+        text-align: center;
+    }
+
+}
+@media only screen and (max-width:480px){
+    input{
+        padding:15px 20px;
+        padding-right:70px;
+    }
+    .last-child button{
+        font-size: 20px;
+        border-radius: 12px;
+        padding:10px 15px;
+    }
+}
